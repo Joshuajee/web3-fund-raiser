@@ -1,14 +1,42 @@
 import header from './../styles/header.module.css'
 import Button from './Button';
 import Logo from './Logo';
-import { useState, useEffect } from 'react';
-
+import { useState, useEffect, useRef } from 'react';
+import SideNav from './nav/SideNav';
 
 
 const Header = () => {
 
     const [isConnected, setIsConnected] =  useState(false);
-    const [wallet, setWallet] = useState([])
+    const [wallet, setWallet] = useState([]);
+    const home = useRef(null);
+
+
+    const hover = (ref) => {
+        const width = parseInt(ref.current.offsetWidth);
+        let size = 0;
+        const interval = setInterval(() => {
+            size++;
+            ref.current.style.width = `${String(size)}px`;
+            if (size >= width) {
+                clearInterval(interval)
+            }
+        }, 10)  
+
+    }
+
+    const leave = (ref) => {
+        const width = parseInt(ref.current.offsetWidth);
+        let size = width;
+        const interval = setInterval(() => {
+            size--;
+            ref.current.style.width = `${String(size)}px`;
+            if (size <= 0) {
+                clearInterval(interval)
+            }
+        }, 10)  
+
+    }
 
     async function connect() {
         if (typeof window.ethereum != "undefined") {
@@ -37,10 +65,10 @@ const Header = () => {
                 <Logo />
 
                 <ul className={`${header.navOne} ${header.navItems}` }>
-                    <li> HOME </li>
-                    <li> BLOG </li>
-                    <li> CAMPAIGN </li>
-                    <li> BLOG </li>
+                    <li onMouseEnter={() => hover(home)} onMouseLeave={() => leave(home)} > HOME <div ref={home}></div></li>
+                    <li> BLOG  <div></div> </li>
+                    <li> CAMPAIGN <div></div> </li>
+                    <li> BLOG <div></div> </li>
                 </ul>
 
                 <ul className={`${header.navTwo} ${header.navItems}` }>
@@ -59,6 +87,10 @@ const Header = () => {
                     }
 
                 </ul>
+
+                <SideNav />
+
+                <button className='menu'>Menu</button>
 
             </nav>
 

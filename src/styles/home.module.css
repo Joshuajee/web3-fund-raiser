@@ -1,6 +1,6 @@
 .content {
     position: absolute;
-    padding-top: 10em;
+    padding-top: 10rem;
     display: flex;
 }
 
@@ -10,26 +10,62 @@
 }
 
 .actions {
-    margin-top: 3em;
+    margin-top: 3%;
 }
 
 .actions button {
-    margin-right: 3em;
+    margin-right: 3%;
 }
 
 .one {
-    width: 35em;
-    margin-left: 4em;
+    width: 45%;
+    margin-left: 4%;
 }
 
 .two {
-    width: 35em;
+    width: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .campaignImg {
-    height: 26em;
-    width: 26em;
+    height: 90%;
+    width: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .content {
+        padding-top: 5rem;
+        display: block;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+    
+    .one {
+        width: 92%;
+        margin-left: 4%;
+    }
+    
+    .two {
+        width: 92%;
+        margin-left: 4%;
+    }
+
+    .campaignImg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .actions {
+        margin-top: 3%;
+    }
+    
+    .actions button {
+        margin-right: 1%;
+    }
+
 }

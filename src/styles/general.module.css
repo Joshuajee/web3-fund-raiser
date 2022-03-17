@@ -3,11 +3,11 @@
 }
 
 .btn {
-    padding: 0.8em 3em 0.8em 3em;
+    padding: 0.6rem 2rem 0.6rem 2rem;
     color: white;
     border: none;
     background-color: #180059;
-    border-radius: 1em;
+    border-radius: 1rem;
     font-size: medium;
     font-weight: bold;
 }
@@ -17,7 +17,7 @@
 }
 
 .money {
-    margin-top: 2em;
+    margin-top: 2rem;
 }
 
 .money .moneyAmount {
@@ -27,15 +27,15 @@
 }
 
 .money p {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 
 .progressBar {
     color: #1ED69B;
-    width: 24em;
+    width: 90%;
     background: #1ED69B;
     height: 5px;
 }

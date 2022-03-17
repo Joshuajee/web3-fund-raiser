@@ -1,7 +1,7 @@
 .nav {
     color: #180059;
     background-color: whitesmoke;
-    height: 6.8em;
+    height: 4rem;
     border-bottom: 1px solid gray;
     display: block;
     position: fixed;
@@ -12,14 +12,14 @@
 
 .navOne {
     position: fixed;
-    width: 30em;
+    width: 30%;
     font-size: small;
-    left: 30em;
+    left: 30%;
 }
 
 .navTwo {
     position: absolute;
-    left: 60em;;
+    right: 2%;;
 }
 
 .navItems {
@@ -32,18 +32,76 @@
 }
 
 .navOne li {
-    line-height: 7.2em;
-    margin-left: 1em;
-    margin-right: 1em;
+    line-height: 5.2rem;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .navTwo li {
-    line-height: 5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    line-height: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .navOne li:hover { 
-    border-bottom: 3px solid #180059;
     cursor: pointer;
+}
+
+.navOne li div { 
+    border-bottom: 3px solid #180059;
+}
+
+.menu {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .menu {
+        display: block;
+        position: absolute;
+    }
+        
+    .nav {
+
+    }
+    
+    .navOne {
+        
+    }
+    
+    .navTwo {
+       
+    }
+    
+    .navItems {
+        list-style-type: none;
+        display: none;
+    }
+    
+    .navItems li {
+        display: inline;
+    }
+    
+    .navOne li {
+        line-height: 5.2rem;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    
+    .navTwo li {
+        line-height: 5%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    .navOne li:hover { 
+        cursor: pointer;
+    }
+    
+    .navOne li div { 
+        border-bottom: 3px solid #180059;
+    }
+    
 }
