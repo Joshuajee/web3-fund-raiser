@@ -1,0 +1,35 @@
+.content {
+    position: absolute;
+    padding-top: 10em;
+    display: flex;
+}
+
+.content h1 {
+    font-size: 50px;
+    color: #180059;
+}
+
+.actions {
+    margin-top: 3em;
+}
+
+.actions button {
+    margin-right: 3em;
+}
+
+.one {
+    width: 35em;
+    margin-left: 4em;
+}
+
+.two {
+    width: 35em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campaignImg {
+    height: 26em;
+    width: 26em;
+}

@@ -1,0 +1,16 @@
+.logo {
+    position: fixed;
+    left: 2em;
+    height: 2.4em;
+    display: inline-block;
+    width: 2.4em;
+    font-size: 46px;
+    padding: 0.6em;
+    z-index: 12;
+    background-color: white;
+}
+
+.w {
+    color: brown;
+    font-size: 56px;
+}

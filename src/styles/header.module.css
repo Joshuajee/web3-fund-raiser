@@ -1,0 +1,49 @@
+.nav {
+    color: #180059;
+    background-color: whitesmoke;
+    height: 6.8em;
+    border-bottom: 1px solid gray;
+    display: block;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+.navOne {
+    position: fixed;
+    width: 30em;
+    font-size: small;
+    left: 30em;
+}
+
+.navTwo {
+    position: absolute;
+    left: 60em;;
+}
+
+.navItems {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.navItems li {
+    display: inline;
+}
+
+.navOne li {
+    line-height: 7.2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.navTwo li {
+    line-height: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.navOne li:hover { 
+    border-bottom: 3px solid #180059;
+    cursor: pointer;
+}
