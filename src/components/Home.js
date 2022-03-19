@@ -1,10 +1,14 @@
+import React, {useState} from "react";
 import home from "./../styles/home.module.css";
 import Money from "./Money";
 import general from "./../styles/general.module.css";
 import Button from "./Button";
 import campaign from "../img/amazon-tree.png";
+import Modal from "./modal/Modal";
 
 const Home = () => {
+
+    const [showModal, setShowModal] =  useState(false);
 
     return (
         <section className={home.content}>
@@ -22,7 +26,7 @@ const Home = () => {
                 <div className={home.actions}>
 
                     <Button text={" ❤️ Donate"} />
-                    <Button text={"Create Campaige"} />
+                    <Button text={"Create Campaige"} onClick={() => setShowModal(true)} />
 
                 </div>
 
@@ -33,11 +37,13 @@ const Home = () => {
             <div className={home.two}>
 
                 <img src={campaign} alt={"Campaign Image"} className={home.campaignImg} />
+
             </div>
 
+            { showModal && <Modal closeModal={() => setShowModal(false)} /> }
 
-            
-        </section>)
+        </section>
+    )
 }
 
 export default Home;

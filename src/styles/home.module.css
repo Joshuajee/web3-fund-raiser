@@ -10,7 +10,7 @@
 }
 
 .actions {
-    margin-top: 3%;
+    margin-top: 2rem;
 }
 
 .actions button {
@@ -48,11 +48,13 @@
     .one {
         width: 92%;
         margin-left: 4%;
+        margin-bottom: 2rem;
     }
     
     .two {
         width: 92%;
         margin-left: 4%;
+        margin-bottom: 2rem;
     }
 
     .campaignImg {
@@ -61,11 +63,11 @@
     }
 
     .actions {
-        margin-top: 3%;
+        margin-top: 1rem;
     }
     
     .actions button {
-        margin-right: 1%;
+        margin: 0.8rem 0.2rem 0.2rem 0.15rem;
     }
 
 }

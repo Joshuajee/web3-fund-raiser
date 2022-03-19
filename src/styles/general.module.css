@@ -3,7 +3,7 @@
 }
 
 .btn {
-    padding: 0.6rem 2rem 0.6rem 2rem;
+    padding: 0.6rem 1.8rem 0.6rem 1.8rem;
     color: white;
     border: none;
     background-color: #180059;
@@ -31,6 +31,7 @@
     margin-block-end: 0rem;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    font-size: small;
 }
 
 .progressBar {
@@ -38,4 +39,18 @@
     width: 90%;
     background: #1ED69B;
     height: 5px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .money .moneyAmount {
+        font-size: 24px;
+    }
+
+    .money p {
+        font-size: x-small;
+        font-weight: 400;
+    }
+
 }
